@@ -1,0 +1,23 @@
+# Swift Package Manager build artifacts
+codebase/.build/
+codebase/*.resolved
+
+# Xcode
+*.xcodeproj/
+*.xcworkspace/
+DerivedData/
+*.xcuserdata/
+
+# Distribution output
+dist/
+
+# macOS
+.DS_Store
+**/.DS_Store
+
+# Secrets
+*.env
+.env.*
+
+# Local AI agent settings (may contain API keys or sensitive data)
+.claude/

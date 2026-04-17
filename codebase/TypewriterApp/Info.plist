@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <key>CFBundleName</key>
+    <string>Only Whisper</string>
+    <key>CFBundleDisplayName</key>
+    <string>Only Whisper</string>
+    <key>CFBundleExecutable</key>
+    <string>OnlyWhisper</string>
+    <key>CFBundleIdentifier</key>
+    <string>com.onlywhisper.app</string>
+    <key>CFBundleVersion</key>
+    <string>1</string>
+    <key>CFBundleShortVersionString</key>
+    <string>1.0.0</string>
+    <key>CFBundlePackageType</key>
+    <string>APPL</string>
+    <key>CFBundleIconFile</key>
+    <string>AppIcon</string>
+    <key>LSMinimumSystemVersion</key>
+    <string>13.0</string>
+
+    <!-- Permission Descriptions -->
+    <key>NSMicrophoneUsageDescription</key>
+    <string>Only Whisper needs access to your microphone to record audio for transcription.</string>
+    <key>NSAppleEventsUsageDescription</key>
+    <string>Only Whisper needs to send keystrokes to paste transcribed text at your cursor position.</string>
+
+    <!-- App Category -->
+    <key>LSApplicationCategoryType</key>
+    <string>public.app-category.productivity</string>
+
+    <!-- High Resolution Display -->
+    <key>NSHighResolutionCapable</key>
+    <true/>
+</dict>
+</plist>

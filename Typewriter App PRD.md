@@ -1,0 +1,17 @@
+# Typewriter App
+
+- **TLDR:** Knowledge workers waste 30-60 mins daily typing, it harms their fingers and slows them down. “Typewriter” App helps them avoid typing by converting their voice to text using OpenAI transcription APIs. Typewriter helps workers increase their productivity by 2x by saving them 20mins of typing daily.
+- **Problem/Oppty**: Knowledge workers who work on desktop/laptop for >5 hrs daily. They type a lot and waste 30-60mins in typing. It takes valuable time away from them. They could be using that time in more productive things. Every min saved is worth $1-5 per worker.
+- **Solution**: Typerwriter app is a MacOS app that can be invoked from anywhere using a hotkey. Upon invocation, it starts recording so the user can start speaking to their computer. It then sends that audio to OpenAI GPT5 APIs apis to transcribe them, and pastes that output received in return in the text field where the cursor is in macOS.
+- **How:**
+    - User JBTD → feature. As a user, I want [X] so I can get [Y]..
+        - I want to invoke it from anywhere using a hotkey so I don’t need to switch apps ⇒ Provide the user an ability to configure the shortcut key to invoke the app in “settings”. App should request all requisite permissions e.g. accessibility, mic etc while setup.
+        - I want to give custom instructions for formatting text so I don’t need to edit the output at all ⇒ Provide a “custom instructions” field in settings tab which is sent alongwith every audio to the GPT5 APIs
+        - I don't want to pay fixed monthly subscription costs because I feel its too expensive as my usage varies by month ⇒ Give users an “API Key” field in settings where they enter their OpenAI API key so they can pay per use themselves and this app is free for them
+        - I want to be able to choose my microphone since I have multiple mics attached to my laptop and i keep switching my setup ⇒ Give a microphone dropdown select in settings based on available mic, while simultaneously falling back to system default. As a P1, It should also smartly switch mic to other mic if no audio is received after invocation.
+        - I want to save my transcription locally sometimes, so  i can refer to it if I want to retrieve it later ⇒ Give them an option in settings to “save their transcriptions” locally in a csv as append only database if they want, else delete the transcriptions saved locally after session ends
+        - I want active overlay that shows me mic sounds bars pulsating as i am talking so I can get feedback that the app is listening to my words ⇒ the moment hotkey is pressed, it should bring a very small pill sized overlay UI (~2 inches bar by 1/2ich height which just has pulsating sound bars showing input of mic recording). When the hotkey is pressed again, it stops recording, sends the audio to GPT APIs and the overlap shows rotating animation with “processing” text and “done” when it gets output from GPT APIs. Then the overlay disappears. If there’s an error, it shows “error” in the overlay for 3 seconds and then disappears.
+        - I want to choose which API to use so I can control costs ⇒ Give option of API type in settings tab as a dropdown between available openai API options
+    - Design reqs
+        - App should just have 3 side tabs, 1/ settings 2/ transcriptions 3/ about. It should be a small window, not that large.
+        - Style:  It should have minimalist apple like design that is very artistic and demonstrates aesthetic beauty and design craft, as artisanal product.

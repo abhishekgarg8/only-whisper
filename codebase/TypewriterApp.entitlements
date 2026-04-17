@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+    <!-- Hardened Runtime: required for notarization -->
+    <!-- No App Sandbox — we are distributing outside the App Store (Gumroad/direct) -->
+
+    <!-- Audio input: microphone access for recording -->
+    <key>com.apple.security.device.audio-input</key>
+    <true/>
+
+    <!-- Network client: required to call OpenAI API -->
+    <key>com.apple.security.network.client</key>
+    <true/>
+
+    <!-- Apple Events: required for simulating Cmd+V paste -->
+    <key>com.apple.security.automation.apple-events</key>
+    <true/>
+
+    <!-- Disable library validation to allow CGEvent tap with Accessibility -->
+    <!-- This is needed because we use CGEvent.tapCreate which requires Accessibility -->
+    <key>com.apple.security.cs.disable-library-validation</key>
+    <true/>
+
+    <!-- Allow unsigned executable memory (not needed but kept for future JIT if any) -->
+    <!-- <key>com.apple.security.cs.allow-unsigned-executable-memory</key> -->
+    <!-- <true/> -->
+</dict>
+</plist>
