@@ -79,8 +79,7 @@ Both hotkeys are fully customizable in Settings → Hotkeys.
 
 ## Pricing
 
-Available on [Gumroad](https://gumroad.com/l/only-whisper). Pay once, use forever. Free updates for v1.x.
-
+**Free **
 ---
 
 ## FAQ
